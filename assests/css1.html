@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+    <style>
+        div {
+            width: 600px;
+            padding: 50px;
+            margin-left: 300px;
+            background-color: rgb(222, 211, 245);
+            border: solid rgb(62, 1, 75);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="text-align: center" ;>REGISTRATION FORM</h1>
+        <form action="https://www.cgvakindia.com/" method="post">
+        
+                <legend style="text-align: center;">SELECTION FORM </legend>
+                <label>username</label><br>
+                <input type="text" name="uname" placeholder="enter username" required><br><br>
+                <label>password</label><br>
+                <input type="password" name="password" placeholder="enter password" required><br><br>
+                <input type="checkbox" value="remember">remember password<br><br>
+                <label>email-id</label><br>
+                <input type="email" name="email-id" placeholder="enter email-id" required><br><br>
+                <label>gender</label><br>
+                <input type="radio" id="gender" name="gender" value="female">female <br>
+                <input type="radio" id="gender" name="gender" value="male">male <br><br>
+                <label>Address</label><br>
+                <textarea></textarea><br><br>
+                <label>Select Profession</label>
+                <select name="field">
+                    <optgroup label="front end developer">
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JAVASCRIPT</option>
+                    </optgroup>
+                    <optgroup label="back end developer">
+                        <option>DATABASE</option>
+                        <option>DJANGO</option>
+                        <option>DOT NET </option>
+                    </optgroup>
+
+                </select>
+                <input type="submit" value="REGISTER"><br><br>
+        
+            <input type="date">Select Date<br><br>
+            <input type="datetime-local">Select Date and Time<br><br>
+
+            <label>Mobile Number</label>
+            <input type="tel" pattern="[0-9]{10}" required>
+            <br>
+            <br>
+            <label>Telephone Number</label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required>
+            <input type="submit" value="Submit">
+        </form>
+</body>
+</div>
+</body>
+
+</html>
