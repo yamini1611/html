@@ -8,20 +8,32 @@
     <link rel="icon" href="NEWFAV.jpg">
     <title>CSS STYLING</title>
     <STYLE>
-        #head{
-            border-style:0;
-            border-bottom: black;
+        body {
+            background: #A770EF;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        }
+
+        #head {
+            border: solid;
+            border-style: 0;
+            border-bottom: rgb(227, 151, 231);
             text-align: center;
             /* border-left:20px ;
             border-right: 20px;
             border-radius: 15px; */
             padding-left: 300px;
-            padding-right:500px;
-            background-color: rgb(238, 201, 236);
+            padding-right: 500px;
+            /* background-color: rgb(180, 151, 179); */
+            background-image: url(ht1.jpg);
         }
-        div {
-            background-color: rgb(202, 243, 229);
-        }
+
+
 
         h1 {
             font-size: xx-large;
@@ -36,14 +48,7 @@
 
         }
 
-        header,
-        footer {
-            padding: 10px;
-            color: rgb(19, 18, 18);
-            background-color: #9bb2c2;
-            clear: left;
-            text-align: left;
-        }
+
 
 
         div {
@@ -58,6 +63,7 @@
 
         #para1 {
             text-align: center;
+
             color: rgb(49, 49, 71)
         }
 
@@ -70,7 +76,7 @@
         }
 
         .horiz {
-            background-color: #eec9e2;
+
             text-align: center;
 
         }
@@ -109,16 +115,16 @@
 
         img {
             padding: 10px;
-            width: 150px;
-            height: 150px;
-            margin-left: 17px;
+            width: 170px;
+            height: 170px;
+            margin-left: 15px;
             opacity: 0.5;
         }
 
-        img :hover {
+        img:hover {
             opacity: 1.0;
-            width: 220px;
-            height: 220px;
+            width: 200px;
+            height: 200px;
         }
 
         nav ul {
@@ -141,6 +147,10 @@
         div.last {
             margin-top: 50%;
         }
+        th :nth-child(odd){
+            color: rgb(202, 191, 185);
+
+        }
     </style>
 
 </head>
@@ -148,15 +158,18 @@
 <body>
 
     <div id="head">
-        <img src="back.jpg" style="display: inline-block; float: left;" ;>
+        <img src="back.jpg" style="display: inline-block; float: left; " ;>
         <!-- <<img src="back.jpg" style ="display: inline-block";> -->
         <!-- <h1 style="margin-top: 0px; margin-bottom:none;padding-bottom:10px;padding-top:10px; text-align: center "
             width="100px" height="100px">-->
-            <h1>FUTURETECH</h1>  
-        <h4 style="text-align: center;">Let's go invent tomorrow instead of worrying about what happened yesterday.</h4>
+        <h1 style="color: aliceblue; font-size:xx-large ; font-weight: 500;">FUTURETECH</h1>
+        <h4 style="text-align: center; color: rgb(222, 216, 224); font-size:large;">Let's go invent tomorrow instead of
+            worrying about what happened yesterday.</h4>
     </div>
+
+
     <div class="container">
-        <ul class="horiz">
+        <ul class="horiz ">
             <li><a href="home.html">Home</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="css1.html">sign up</a></li>
@@ -173,100 +186,165 @@
 
         </nav>
 
-
-
-        </header>
-
         <article>
+            <iframe width="360" height="165" style="float: right;" src="https://www.youtube.com/embed/2RQUDtI2VC8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
             <img src="JS.jpg">
             <p id="para1" style="float: left;  text-align: left;">
             <H2 style="color: crimson;">JAVASCRIPT</H2>
-            JavaScript is a programming language commonly used in web development. It was originally developed by
-            Netscape as a means to add dynamic and interactive elements to websites. While JavaScript is influenced
-            by Java, the syntax is more similar to C and is based on ECMAScript, a scripting language developed by
-            Sun Microsystems.
+            <ul style="color: rgb(37, 6, 150); font-size:large;">
+                <li>JavaScript is a programming language commonly used in web development. It was originally developed
+                    by
+                    Netscape as a means to add dynamic and interactive elements to websites. While JavaScript is
+                    influenced
+                    by Java, the syntax is more similar to C and is based on ECMAScript, a scripting language developed
+                    by
+                    Sun Microsystems.</li><br>
 
-            JavaScript is a client-side scripting language, which means the source code is processed by the client's
-            web browser rather than on the web server. This means JavaScript functions can run after a webpage has
-            loaded without communicating with the server. For example, a JavaScript function may check a web form
-            before it is submitted to make sure all the required fields have been filled out. The JavaScript code
-            can produce an error message before any information is actually transmitted to the server.
+                <li>JavaScript is a client-side scripting language, which means the source code is processed by the
+                    client's
+                    web browser rather than on the web server. This means JavaScript functions can run after a webpage
+                    has
+                    loaded without communicating with the server. For example, a JavaScript function may check a web
+                    form
+                    before it is submitted to make sure all the required fields have been filled out. The JavaScript
+                    code
+                    can produce an error message before any information is actually transmitted to the server.</li><br>
 
-            Like server-side scripting languages, such as PHP and ASP, JavaScript code can be inserted anywhere
-            within the HTML of a webpage. However, only the output of server-side code is displayed in the HTML,
-            while JavaScript code remains fully visible in the source of the webpage. It can also be referenced in a
-            separate .JS file, which may also be viewed in a browser.
-            <a href="https://techterms.com/definition/javascript">for more deatils</a>
+                <li>Like server-side scripting languages, such as PHP and ASP, JavaScript code can be inserted anywhere
+                    within the HTML of a webpage. However, only the output of server-side code is displayed in the HTML,
+                    while JavaScript code remains fully visible in the source of the webpage. It can also be referenced
+                    in a
+                    separate .JS file, which may also be viewed in a browser.</li>
+                <a href="https://techterms.com/definition/javascript">for more deatils</a>
+            </ul>
+
             </p>
+            <iframe width="360" height="165" style="float:right;" src="https://www.youtube.com/embed/-_X6PhkjpzU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe><br><br>
+
             <IMG src="py.jpg">
             <p id="para2" style="float:left">
             <H2 style="color: crimson;">PYTHON</H2>
-            Python is a widely-used general-purpose, high-level programming language. It was initially designed by
-            Guido
-            van Rossum in 1991 and developed by Python Software Foundation. It was mainly developed for emphasis on
-            code
-            readability, and its syntax allows programmers to express concepts in fewer lines of code.
+            <ul style="color: rgb(23, 2, 63); font-size: large;">
+                <li>Python is a widely-used general-purpose, high-level programming language. It was initially designed
+                    by
+                    Guido
+                    van Rossum in 1991 and developed by Python Software Foundation. It was mainly developed for emphasis
+                    on
+                    code
+                    readability, and its syntax allows programmers to express concepts in fewer lines of code.</li><br>
 
-            In the late 1980s, history was about to be written. It was that time when working on Python started.
-            Soon
-            after that, Guido Van Rossum began doing its application-based work in December of 1989 at Centrum
-            Wiskunde
-            & Informatica (CWI) which is situated in the Netherlands. It was started firstly as a hobby project
-            because
-            he was looking for an interesting project to keep him occupied during Christmas. The programming
-            language in
-            which Python is said to have succeeded is ABC Programming Language, which had interfacing with the
-            Amoeba
-            Operating System and had the feature of exception handling. He had already helped to create ABC earlier
-            in
-            his career and he had seen some issues with ABC but liked most of the features. After that what he did
-            was
-            really very clever. He had taken the syntax of ABC, and some of its good features. It came with a lot of
-            complaints too, so he fixed those issues completely and had created a good scripting language that had
-            removed all the flaws. The inspiration for the name came from BBC's TV Show – 'Monty Python’s Flying
-            Circus’, as he was a big fan of the TV show and also he wanted a short, unique and slightly mysterious
-            name
-            for his invention and hence he named it Python! He was the “Benevolent dictator for life” (BDFL) until
-            he
-            stepped down from the position as the leader on 12th July 2018. For quite some time he used to work for
-            Google, but currently, he is working at Dropbox.
-            The language was finally released in 1991. When it was released, it used a lot fewer codes to express
-            the
-            concepts, when we compare it with Java, C++ & C. Its design philosophy was quite good too. Its main
-            objective is to provide code readability and advanced developer productivity. When it was released it
-            had
-            more than enough capability to provide classes with inheritance, several core data types exception
-            handling
-            and functions.
-            <a href="https://www.w3schools.com/python/">for more details</a>
+                <li>In the late 1980s, history was about to be written. It was that time when working on Python started.
+                    Soon
+                    after that, Guido Van Rossum began doing its application-based work in December of 1989 at Centrum
+                    Wiskunde
+                    & Informatica (CWI) which is situated in the Netherlands. </li><br>
+                <li>It was started firstly as a hobby project
+                    because
+                    he was looking for an interesting project to keep him occupied during Christmas. The programming
+                    language in
+                    which Python is said to have succeeded is ABC Programming Language, which had interfacing with the
+                    Amoeba
+                    Operating System and had the feature of exception handling.</li>
+                <li> He had already helped to create ABC
+                    earlier
+                    in
+                    his career and he had seen some issues with ABC but liked most of the features. After that what he
+                    did
+                    was
+                    really very clever.</li><br>
+                <li> He had taken the syntax of ABC, and some of its good features. It came with a lot of
+                    complaints too, so he fixed those issues completely and had created a good scripting language that
+                    had
+                    removed all the flaws. The inspiration for the name came from BBC's TV Show – 'Monty Python’s Flying
+                    Circus’, as he was a big fan of the TV show and also he wanted a short, unique and slightly
+                    mysterious
+                    name
+                    for his invention and hence he named it Python!</li><br>
+                <li> He was the “Benevolent dictator for life” (BDFL)
+                    until
+                    he
+                    stepped down from the position as the leader on 12th July 2018. For quite some time he used to work
+                    for
+                    Google, but currently, he is working at Dropbox.
+                    The language was finally released in 1991.</li><br>
+                <li> When it was released, it used a lot fewer codes to express
+                    the
+                    concepts, when we compare it with Java, C++ & C. Its design philosophy was quite good too. Its main
+                    objective is to provide code readability and advanced developer productivity.
+                    When it was released it
+                    had
+                    more than enough capability to provide classes with inheritance, several core data types exception
+                    handling
+                    and functions.
+                    <a href="https://www.w3schools.com/python/">for more details</a>
+                </li>
+            </ul>
             </p>
-            
+            <iframe width="360" height="165" style="float: right;" src="https://www.youtube.com/embed/pcW9rsyPPU8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
             <img src="cs.jpg">
             <P id="para3 " style="float:left ">
             <h2 style="color: crimson;">CSS</h2>
-            CSS is another thing you may learn just after understanding HTML. CSS stands for the cascading style
-            sheets,
-            which Hakon Wium Lie created in 1994. Hakon Wium Lie is considered the father of CSS as he created this
-            amazing thing. And he used to work with the father of HTML, Mr. Tim Berners-Lee, when he was working in
-            CERN.
+            <ul style="color: rgb(46, 23, 6); font-size: large;">
+                <li>CSS is another thing you may learn just after understanding HTML. CSS stands for the cascading style
+                    sheets,
+                    which Hakon Wium Lie created in 1994. Hakon Wium Lie is considered the father of CSS as he created
+                    this
+                    amazing thing. And he used to work with the father of HTML, Mr. Tim Berners-Lee, when he was working
+                    in
+                    CERN.</li><br>
 
-            CSS was offered as the web styling language to make it appealing. And it was the solution that most of
-            the
-            users of HTML were looking at that time. When it launched, the users could use HTML 4.01 and CSS
-            together to
-            make their web pages more attractive.
+                <li>CSS was offered as the web styling language to make it appealing. And it was the solution that most
+                    of
+                    the
+                    users of HTML were looking at that time. When it launched, the users could use HTML 4.01 and CSS
+                    together to
+                    make their web pages more attractive.</li><br>
 
-            Hence, if you want to know about the history of CSS from its origin to now. Then read this essential
-            article
-            because it has several things that will help you understand CSS. You will also understand how CSS won
-            over
-            other styling languages of that time.
-            <a href="https://www.w3schools.com/css/default.asp">for more details</a>
+                <li>Hence, if you want to know about the history of CSS from its origin to now. Then read this essential
+                    article
+                    because it has several things that will help you understand CSS. You will also understand how CSS
+                    won
+                    over
+                    other styling languages of that time.</li>
+                <a href="https://www.w3schools.com/css/default.asp">for more details</a></li>
+            </ul>
             </P>
-            
+
         </article>
 
     </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th style="text-align: center; padding-left: 30px; padding-right: 30px;">FRONT END TECHNOLOGIES</th>
+                <th style="text-align: center; padding-left: 30px; padding-right: 30px;">BACK END TECHNOLOGIES</th>
+            </tr>
+            <tr>
+                <td style="text-align: center;">HTML</td>
+                <td style="text-align: center;">PHP</td>
+                
+            </tr>
+            <TR>
+                <TD style="text-align: center;">CSS</TD>
+                <TD style="text-align: center;">PYTHON</TD>
+                
+            </TR>
+            <TR>
+                <TD style="text-align: center;">REACT</TD>
+                <TD style="text-align: center;">NODE JS</TD>
+            </TR>
+        </thead>
+    </table>
 
 
 </body>
