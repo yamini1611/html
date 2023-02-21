@@ -130,6 +130,7 @@
         nav ul {
             list-style-type: none;
             padding: 0;
+            
         }
 
         nav ul a {
@@ -147,10 +148,77 @@
         div.last {
             margin-top: 50%;
         }
-        th :nth-child(odd){
-            color: rgb(202, 191, 185);
+        th:nth-child(even){
+            color: rgb(14, 1, 1);
 
         }
+        tH:nth-child(odd){
+            color: rgb(4, 7, 204);
+
+        }
+        tr:nth-child(odd){
+             background-color: rgb(245, 234, 85);
+        }
+        tr:nth-child(even){
+             background-color: rgb(133, 240, 234);
+        }
+        body {background-color : #ededed; font-family : "Open Sans", sans-serif;}
+
+
+
+li a {text-decoration : none; color : #2d2f31;}
+
+
+nav {
+  width : 300px; 
+  background: #d9d9d9;
+  margin : 40px auto; 
+}
+
+span {
+  padding : 30px;
+  background : #bacada; 
+  color : rgb(24, 8, 8);
+  font-size : 1.2em;
+  font-variant : small-caps;
+  cursor : pointer;
+  display: block;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slide li {padding : 30px;}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 300px;} 
+td{
+color:rgb(53, 5, 63);
+font-size: large;
+
+}
+tr:nth-child(odd):hover{
+    background-color: rgb(135, 222, 154);
+}
+tr:nth-child(even):hover{
+    background-color: rgb(239, 178, 241);
+}
+
+
+        
     </style>
 
 </head>
@@ -171,20 +239,28 @@
     <div class="container">
         <ul class="horiz ">
             <li><a href="home.html">Home</a></li>
-            <li><a href="">About Us</a></li>
+            <li><a href="about us.html">About Us</a></li>
             <li><a href="css1.html">sign up</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
         </ul>
+        
+        
+
         <nav>
-            <UL>
-                <h1>TOPICS</h1>
-                <li><a href="#para1">JAVASCRIPT</a></li>
-                <li><a href="#para2">PYTHON</a></li>
-                <li><a href="#para3">CSS</a></li>
+        
+          <label for="touch"><span>TOPICS</span></label>               
+          <input type="checkbox" id="touch"> 
+        
+          <ul class="slide">
+            <li><a href="#para1">JAVASCRIPT</a></li> 
+            <li><a href="#para2">PYTHON</a></li>
+            <li><a href="#para3">CSS</a></li>
+           
+          </ul>
+        
+        </nav> 
 
-            </UL>
-
-        </nav>
+        
 
         <article>
             <iframe width="360" height="165" style="float: right;" src="https://www.youtube.com/embed/2RQUDtI2VC8"
@@ -323,11 +399,12 @@
         </article>
 
     </div>
-    <table border="1">
+    <table border="1"  style="margin-left: 290px; margin-right: 30px; margin-bottom: 50px;">
+        <caption style="text-decoration: solid; color: rgb(112, 7, 72); font-size: x-large;">TRENDING COURSES</caption>
         <thead>
             <tr>
-                <th style="text-align: center; padding-left: 30px; padding-right: 30px;">FRONT END TECHNOLOGIES</th>
-                <th style="text-align: center; padding-left: 30px; padding-right: 30px;">BACK END TECHNOLOGIES</th>
+                <th style="text-align: center; padding-left: 30px; padding-right: 30px; color: darkred;">FRONT END TECHNOLOGIES</th>
+                <th style="text-align: center; padding-left: 30px; padding-right: 30px; color: darkred;">BACK END TECHNOLOGIES</th>
             </tr>
             <tr>
                 <td style="text-align: center;">HTML</td>
@@ -335,13 +412,13 @@
                 
             </tr>
             <TR>
-                <TD style="text-align: center;">CSS</TD>
-                <TD style="text-align: center;">PYTHON</TD>
+                <td style="text-align: center;">CSS</Td>
+                <td style="text-align: center;">PYTHON</Td>
                 
             </TR>
             <TR>
-                <TD style="text-align: center;">REACT</TD>
-                <TD style="text-align: center;">NODE JS</TD>
+                <Td style="text-align: center;">REACT</Td>
+                <Td style="text-align: center;">NODE JS</Td>
             </TR>
         </thead>
     </table>
